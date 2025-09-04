@@ -1,6 +1,7 @@
 #  **End to End Data Engineering project in Azure**
 
-**This project is a modern Azure data engineering pipeline designed to automate ingestion, transformation, and reporting. The architecture leverages Azure Data Factory (ADF), Azure Data Lake Storage (ADLS Gen2), Azure Databricks with Unity Catalog, Azure Synapse Analytics and Azure Key Vault for secure secret**
+**This project is a modern Azure data engineering pipeline designed to automate ingestion, transformation, governance, and reporting.
+The architecture leverages Azure Data Factory (ADF) for orchestration, Azure Data Lake Storage (ADLS Gen2) for raw and curated storage, Azure Databricks with Unity Catalog for scalable transformations and governance, Delta Lake tables for reliable and ACID-compliant data storage, Azure Synapse Analytics for reporting, and Azure Key Vault for secure secret management.**
 
 ## Workflow:
 
