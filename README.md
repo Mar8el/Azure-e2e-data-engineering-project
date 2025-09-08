@@ -5,7 +5,7 @@ The architecture leverages Azure Data Factory (ADF) for orchestration, Azure Dat
 
 ## Workflow:
 
-### 1 Data Ingestion with ADF
+###  Data Ingestion with ADF
 
 - ADF pipeline pulls data from from the source in raw format.
 
