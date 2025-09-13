@@ -32,3 +32,5 @@ The architecture leverages Azure Data Factory (ADF) for orchestration, Azure Dat
 - ADF then runs a Synapse SQL script to create/update external tables or views.
 
 - Business users and BI tools (like Power BI) can query clean, curated datasets with low latency.
+
+https://www.youtube.com/watch?v=LsXqiiw0W2k&t=1133s
