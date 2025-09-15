@@ -1,0 +1,36 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Script1",
+				"type": "Script",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "AzureSynapseAnalytics1",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "Query",
+							"text": "create or ALTER view dbo.salessummarynew\nas\nselect * FROM\n    OPENROWSET (\n        bulk 'https://adlsgen2salesdata2025.dfs.core.windows.net/mycontainer/salesdata/cleaned/sales_summary/*.parquet',\n        format = 'parquet'\n    ) as [result]"
+						}
+					],
+					"scriptBlockExecutionTimeout": "02:00:00"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-08-27T18:21:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

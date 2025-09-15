@@ -1,0 +1,15 @@
+{
+	"name": "adf-salesdata2025",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "3fb005b1-98f6-4f4f-a7df-67fd33d1e1ad",
+		"tenantId": "f53a38c3-e8dd-4754-954b-3884c96c43a2",
+		"userAssignedIdentities": {
+			"/subscriptions/0b20b9d7-36c2-4bfe-b032-85a274f0e38e/resourcegroups/myresourcegroup/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ADF-Databricks-MI": {
+				"clientId": "d907ac8c-54f6-45a6-8226-a004a6ea4730",
+				"principalId": "cfa58a05-1d0e-44a9-be0f-f46ff6f9b5f5"
+			}
+		}
+	}
+}
