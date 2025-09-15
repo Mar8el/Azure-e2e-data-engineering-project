@@ -3,6 +3,8 @@
 **This project is a modern Azure data engineering pipeline designed to automate ingestion, transformation, governance, and reporting.
 The architecture leverages Azure Data Factory (ADF) for orchestration, Azure Data Lake Storage (ADLS Gen2) for raw and curated storage, Azure Databricks with Unity Catalog for scalable transformations and governance, Delta Lake tables for reliable and ACID-compliant data storage, Azure Synapse Analytics for reporting, and Azure Key Vault for secure secret management.**
 
+![](https://github.com/stiletamz-lgtm/Azure-e2e-data-engineering-project/blob/main/diagram/Gif.gif)
+
 ## Workflow:
 
 ###  Data Ingestion with ADF
